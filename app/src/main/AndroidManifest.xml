@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CLapp">
-        <activity android:name=".TabellenActivity"></activity>
+        <activity android:name=".FavouriteActivity"></activity>
+        <activity android:name=".RandomActivity" />
+        <activity android:name=".TabellenActivity" />
         <activity android:name=".UpcomingActivity" />
         <activity android:name=".StartActivity">
             <intent-filter>

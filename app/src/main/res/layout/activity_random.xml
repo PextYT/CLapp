@@ -5,22 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bckgrnd"
-    tools:context=".TabellenActivity">
+    tools:context=".RandomActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="371dp"
+        android:layout_height="58dp"
+        android:text="Shake the phone to get a random Team"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        android:fontFamily="serif"
+        android:gravity="center"/>
 
-        <TextView
-            android:id="@+id/tableText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white" />
-    </ScrollView>
+    <TextView
+        android:id="@+id/shaketext"
+        android:layout_width="373dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/again"
+        android:layout_width="390dp"
+        android:layout_height="43dp"
+        android:onClick="startAgain"
+        android:text="@string/shake_again"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="1.0"
+        android:fontFamily="serif"
+        android:gravity="center"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="414dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="415dp"
         android:layout_height="57dp"
         android:background="#95303F9F"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,6 +68,7 @@
             android:layout_width="53dp"
             android:layout_height="42dp"
             android:background="#00ED2828"
+            android:onClick="groupsIntent"
             app:icon="@drawable/ic_action_name"
             app:iconTint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -78,7 +112,6 @@
             android:layout_height="48dp"
             android:background="#00FFFFFF"
             android:backgroundTint="#00000000"
-            android:onClick="randomIntent"
             app:icon="@drawable/ic_shake"
             app:iconPadding="6dp"
             app:iconTint="#FFFFFF"

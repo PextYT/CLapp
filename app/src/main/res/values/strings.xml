@@ -3,4 +3,10 @@
     <string name="randomteam">RandomTeam</string>
     <string name="groups">Groups</string>
     <string name="startimage">startImage</string>
+    <string name="shake">shake</string>
+    <string name="_0_0">0.0</string>
+    <string name="shake_again">Shake again</string>
+    <string name="upcomming_games">Upcomming Games</string>
+    <string name="w_hle_dein_lieblingsteam">Wähle dein LieblingsTeam</string>
+    <string name="show_last_games">Show last Games</string>
 </resources>
